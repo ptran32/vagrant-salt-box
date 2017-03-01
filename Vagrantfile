@@ -11,9 +11,6 @@ VAGRANTFILE_API_VERSION = "2"
     ## Choose Node Name
     config.vm.hostname = "saltbox"
 
-    # Disable vguest auto update 
-    config.vbguest.auto_update = false
-
     ## For masterless, mount your salt file root and pillar
     config.vm.synced_folder "~/git/vagrant-salt-box/salt/roots", "/srv/salt/"
     config.vm.synced_folder "~/git/vagrant-salt-box/salt/pillar", "/srv/pillar/"
